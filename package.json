@@ -1,0 +1,28 @@
+{
+  "name": "books-api",
+  "version": "1.0.0",
+  "description": "books api",
+  "main": "index.js",
+  "engines": {
+    "node": "v14.16.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "nodemon": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gonjavi/node-books-api.git"
+  },
+  "author": "gonzalo j mancilla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gonjavi/node-books-api/issues"
+  },
+  "homepage": "https://github.com/gonjavi/node-books-api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.12.1"
+  }
+}
