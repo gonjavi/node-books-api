@@ -49,12 +49,12 @@ app.get('/book/:id', (req, res) => {
 app.post('/books', (req, res) => {
   let body = req.body;
 
-  let book = {
+  let book = new Book({
     title: body.title,
     category: body.category,
     progress: body.progress,
     chapter: body.chapter
-  }
+  });
 
   book.save((err, bookDB) => {
     if (err) {
@@ -79,7 +79,7 @@ app.post('/books', (req, res) => {
 });
 
 app.delete('/book/:id', (req, res) => {
-  let id = req.body.id;
+  let id = req.params.id;
 
   Book.findByIdAndDelete(id, (err, bookDB) => {
     if (err) {

@@ -2,7 +2,7 @@ require('./config/config');
 const mongoose = require('mongoose');
 const express = require('express');
 let app = express();
-app.use(express.urlencoded)({ extended: true});
+app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
 app.use(require('./routes/book'));
 
