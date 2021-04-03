@@ -4,7 +4,7 @@ This is a public API that allows crud actions for books. The propject was built 
 
 ## Endpoints to test the API
 
-url: https://node-books-api.herokuapp.com/
+url: https://node-book-api.herokuapp.com/
 
 user endpoints
 - get: books - url/books
